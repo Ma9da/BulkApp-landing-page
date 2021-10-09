@@ -1,0 +1,55 @@
+%primary-brn {
+	padding: 13px 42px;
+	text-align: center;
+	background-color: $secondary-bg;
+	color: $primary-txt;
+	border: none;
+	font-size: 1rem;
+	border-radius: 5px;
+}
+%gradient {
+	@include linear-gradient(
+		90deg,
+		rgba(181, 46, 255, 1) 38%,
+		rgba(122, 70, 252, 1) 51%
+	);
+}
+%secondary-btn {
+	@extend %primary-brn;
+	background-color: $secondary-btn; // $gradiant-darkPurpel;
+	color: $secondary-bg;
+}
+%pricing-btn {
+	@extend %primary-brn;
+	background-color: $primary-bg;
+}
+%appStoresBtn {
+	position: relative;
+	display: inline-block;
+	color: $primaryHex;
+	min-width: 170px;
+	text-align: left;
+	line-height: 1;
+	@include background-color($primary-bg);
+	@include rounded(2rem);
+	@include box-shadow(5px, 4.5px, 9.5px, 0, lighten($black, 73%));
+	margin: 0.25rem;
+	padding: 0.3rem 2.5rem;
+	small {
+		font-size: 0.75rem;
+	}
+	span {
+		font-weight: 500;
+	}
+	.svg-inline--fa {
+		position: absolute;
+		top: calc(50% - 0.75rem);
+		left: 0.75rem;
+		font-size: 1.4rem;
+
+		&.fa-apple {
+			top: calc(50% - 0.9rem);
+			font-size: 1.6rem;
+		}
+	}
+}

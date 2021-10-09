@@ -1,0 +1,47 @@
+// start query
+@mixin xs {
+	@media (min-width: $mobile-xs-width) and (max-width: calc(#{$mobile-sm-width} - 1px)) {
+		@content;
+	}
+}
+@mixin sm {
+	@media (min-width: $mobile-sm-width) and (max-width: calc(#{$tablet-xs-width} - 1px)) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media (min-width: $mobile-sm-width) and (max-width: calc(#{$tablet-xs-width} - 1px)) {
+		@content;
+	}
+}
+@mixin desktop {
+	@media (min-width: $tablet-xs-width) and (max-width: calc(#{$tablet-sm-width} - 1px)) {
+		@content;
+	}
+}
+//end query
+@mixin box-shadow($top, $left, $blur, $spread, $color, $inset: false) {
+	@if $inset {
+		@each $vendor in $vendors {
+			#{$vendor}box-shadow: inset $top $left $blur $spread $color;
+		}
+	} @else {
+		@each $vendor in $vendors {
+			#{$vendor}box-shadow: $top $left $blur $spread $color;
+		}
+	}
+}
+@mixin linear-gradient($direction, $from, $to) {
+	background: -webkit-linear-gradient($direction, $from 0%, $to 100%);
+	background: -moz-linear-gradient($direction, $from 0%, $to 100%);
+	background: -o-linear-gradient($direction, $from 0%, $to 100%);
+	background: linear-gradient($direction, $from 0%, $to 100%);
+}
+@mixin background-color($background-color) {
+	background-color: $background-color;
+}
+@mixin rounded($radius: 0.5em) {
+	@each $vendor in $vendors {
+		#{$vendor}border-radius: $radius;
+	}
+}

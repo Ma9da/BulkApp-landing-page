@@ -1,0 +1,733 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Roboto", sans-serif;
+	ul {
+		list-style: none;
+	}
+	a {
+		text-decoration: none;
+		display: inline-block;
+	}
+	h1 {
+		font-size: 4rem;
+		text-transform: capitalize;
+	}
+	h2 {
+		font-size: 2rem;
+		text-transform: capitalize;
+		color: $primary-txt;
+	}
+	p {
+		color: $secandory-txt;
+	}
+	button,
+	inputm text-area {
+		outline: none;
+	}
+	.container {
+		width: 85%;
+		max-width: 1442px;
+		margin: 0 auto;
+	}
+	.flex-container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.paddingY {
+		padding: 150px 0;
+	}
+	.header-aria {
+		margin-bottom: 80px;
+		p {
+			padding: 20px 0;
+		}
+		.flex-container {
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	.primary-brn {
+		@extend %primary-brn;
+		text-transform: capitalize;
+	}
+	.background-color {
+		@extend %gradient;
+	}
+	.secondary-btn {
+		@extend %primary-brn;
+		@include linear-gradient(
+			90deg,
+			rgba(181, 46, 255, 1) 38%,
+			rgba(122, 70, 252, 1) 51%
+		);
+		text-transform: capitalize;
+		color: $primary-bg;
+	}
+	.pricing-btn {
+		@extend %pricing-btn;
+		border: 1px solid #dddddd;
+	}
+	.appstore-btn {
+		@extend %appStoresBtn;
+	}
+}
+
+.navbar {
+	padding: 15px 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	transition: transform 0.2s 0.2s;
+	.flex-container {
+		justify-content: space-between;
+		align-items: center;
+		// @include tablet {
+		// 	flex-direction: column;
+		// }
+		// @include sm {
+		// 	flex-direction: column;
+		// }
+		// @include xs {
+		// 	flex-direction: column;
+		// }
+	}
+
+	.navbar__logo {
+		width: 135px;
+	}
+	.navbar__links {
+		display: flex;
+		margin-left: 0;
+		@include desktop {
+			flex-direction: column;
+			align-items: flex-end;
+			background-color: $gradiant-lightPurpel;
+			color: $primary-bg;
+			display: none;
+		}
+		@include tablet {
+			flex-direction: column;
+			align-items: flex-end;
+			background-color: $gradiant-lightPurpel;
+			color: $primary-bg;
+			display: none;
+		}
+		@include sm {
+			flex-direction: column;
+			align-items: flex-end;
+			background-color: $gradiant-lightPurpel;
+			color: $primary-bg;
+			display: none;
+		}
+		@include xs {
+			flex-direction: column;
+			align-items: flex-end;
+			background-color: $gradiant-lightPurpel;
+			color: $primary-bg;
+			display: none;
+		}
+	}
+	.navbar__links-item {
+		text-transform: uppercase;
+		padding: 0 20px;
+	}
+	.navbar__links-item a {
+		padding: 12px 5px;
+		color: $primary-bg;
+	}
+}
+.header {
+	background-image: url($img-bg-url);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	.header__info {
+		width: 50%;
+		color: $primary-bg;
+		@include tablet {
+			width: 100%;
+		}
+		@include sm {
+			width: 100%;
+		}
+		@include xs {
+			width: 100%;
+		}
+	}
+
+	.header__info p {
+		color: $primary-bg;
+	}
+	.header__info-txt {
+		padding: 23px 0;
+	}
+
+	.header__img {
+		width: 35%;
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 40px;
+		//media queries
+		@include tablet {
+			display: none;
+		}
+		@include sm {
+			display: none;
+		}
+		@include xs {
+			display: none;
+		}
+	}
+	.header__img img {
+		width: 55%;
+	}
+
+	.flex-container {
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+	}
+}
+.unique {
+	.unique__cards {
+		display: flex;
+		flex-grow: 1;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		//media queries
+		@include desktop {
+			justify-content: space-between;
+		}
+		@include tablet {
+			// flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		@include sm {
+			// flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		@include xs {
+			// flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	.unique__cards-card {
+		text-align: left;
+		width: 20%;
+		@include box-shadow(-1px, -1px, 20px, 0, rgb(224, 224, 224));
+		padding: 50px 30px;
+		//media queries
+		@include desktop {
+			width: 46%;
+			margin-bottom: 30px;
+		}
+		@include tablet {
+			width: 90%;
+			margin-bottom: 30px;
+		}
+		@include sm {
+			width: 90%;
+			margin-bottom: 30px;
+		}
+		@include xs {
+			width: 90%;
+			margin-bottom: 30px;
+		}
+	}
+	h3 {
+		padding: 13px 0;
+		text-transform: capitalize;
+		// @import "main";
+	}
+	.flex-container {
+		justify-content: center;
+		text-align: center;
+		flex-wrap: wrap;
+		flex-grow: 1;
+	}
+}
+
+.believe {
+	background-color: $primary-bg;
+	.flex-container {
+		justify-content: space-between;
+	}
+	.believe__img {
+		width: 48%;
+		//media queries
+		@include desktop {
+			width: 100%;
+		}
+		@include tablet {
+			width: 100%;
+		}
+		@include sm {
+			display: none;
+		}
+		@include xs {
+			display: none;
+		}
+	}
+	.believe__img img {
+		@include desktop {
+			width: 30%;
+		}
+		@include tablet {
+			width: 30%;
+		}
+	}
+	.believe__info {
+		width: 45%;
+		//media queries
+		@include desktop {
+			width: 100%;
+		}
+		@include tablet {
+			width: 100%;
+		}
+		@include sm {
+			width: 100%;
+		}
+		@include xs {
+			width: 100%;
+		}
+	}
+	p {
+		padding: 30px 0;
+	}
+}
+
+.video {
+	position: relative;
+	.video__icon {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		//media queries
+		@include sm {
+			width: 50px;
+			height: 50px;
+		}
+		@include xs {
+			width: 50px;
+			height: 50px;
+		}
+	}
+}
+.pricing {
+	background-color: $primary-bg;
+	.flex-container {
+		justify-content: center;
+		text-align: center;
+	}
+	.pricing__plan-header {
+		padding: 24px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: left;
+	}
+	.pricing__plans {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		@include desktop {
+			flex-direction: column;
+		}
+		@include tablet {
+			flex-direction: column;
+		}
+		@include sm {
+			flex-direction: column;
+		}
+		@include xs {
+			flex-direction: column;
+		}
+		h3 {
+			font-weight: 700;
+			padding: 10px 0;
+		}
+		span {
+			font-size: 3rem;
+			font-weight: 700;
+			padding: 10px 0;
+		}
+		ul {
+			padding: 20px 0;
+			border-top: 1px solid $light-borders;
+		}
+		li {
+			margin-bottom: 10px;
+			color: $secandory-txt;
+		}
+	}
+	.pricing__plan {
+		width: 30%;
+		background-color: $secondary-bg;
+		padding: 50px 30px;
+		@include desktop {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+		@include tablet {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+		@include sm {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+		@include xs {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+}
+.screenshots {
+	.flex-container {
+		justify-content: center;
+	}
+	.screenshots__header {
+		text-align: center;
+	}
+	.screenshots__imgs {
+		display: flex;
+		justify-content: space-between;
+		@include desktop {
+			flex-wrap: wrap;
+			flex-grow: 1;
+		}
+		@include tablet {
+			flex-wrap: wrap;
+			flex-grow: 1;
+		}
+		@include sm {
+			flex-direction: column;
+		}
+		@include xs {
+			flex-direction: column;
+		}
+	}
+	.screenshots__img {
+		width: 20%;
+		@include desktop {
+			width: 45%;
+		}
+		@include tablet {
+			width: 45%;
+		}
+		@include sm {
+			display: none;
+		}
+		@include xs {
+			display: none;
+		}
+	}
+}
+.testmonials {
+	background-color: $primary-bg;
+	.testmonials__header {
+		text-align: center;
+	}
+	.flex-container {
+		align-items: center;
+		justify-content: center;
+	}
+	.testmonials__cards {
+		display: flex;
+		justify-content: space-between;
+		@include tablet {
+			flex-direction: column;
+		}
+		@include sm {
+			flex-direction: column;
+		}
+		@include xs {
+			flex-direction: column;
+		}
+	}
+	.testmonials__card {
+		background-color: $secondary-bg;
+		padding: 15px 20px;
+		width: 45%;
+		border-radius: 20px;
+		span {
+			color: $secandory-txt;
+		}
+		h4 {
+			font-size: 1.8rem;
+			text-transform: capitalize;
+			padding: 10px 0;
+		}
+		@include tablet {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		@include sm {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		@include xs {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+}
+.download {
+	.flex-container {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.download__header {
+		h2 {
+			color: $secondary-bg;
+			font-size: 3rem;
+		}
+		p {
+			padding: 30px;
+			color: $secondary-bg;
+			font-size: 1.2rem;
+		}
+	}
+	.btns__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+		@include sm {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			align-content: center;
+		}
+		@include xs {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			align-content: center;
+		}
+	}
+	.btn {
+		color: $primary-bg;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		border: 1px solid $primary-bg;
+		background-color: rgba(255, 255, 255, 0);
+		margin-left: 30px;
+		width: 250px;
+		height: 85px;
+		@include sm {
+			margin-bottom: 30px;
+			margin-left: 0;
+		}
+		@include xs {
+			margin-bottom: 30px;
+			margin-left: 0;
+		}
+	}
+
+	.btn-text {
+		color: $primary-bg;
+		font-size: 25px;
+	}
+	.btn-brand {
+		color: $primary-bg;
+		font-size: 20px;
+	}
+}
+.news {
+	.news__header {
+		text-align: center;
+	}
+	.flex-container {
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+	}
+	.news__cards {
+		display: flex;
+		justify-content: space-between;
+		@include desktop {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+		}
+		@include sm {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+		}
+		@include xs {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+		}
+	}
+	.news__card {
+		background-color: $primary-bg;
+		width: 30.33%;
+		padding: 30px;
+		@include desktop {
+			width: 70%;
+			margin-bottom: 30px;
+		}
+		@include sm {
+			width: 80%;
+			margin-bottom: 30px;
+		}
+		@include xs {
+			width: 90%;
+			margin-bottom: 30px;
+		}
+		h4 {
+			font-size: 1.5rem;
+			text-transform: capitalize;
+			color: $primary-txt;
+		}
+		p {
+			padding: 20px 0;
+		}
+		.news__card-date {
+			border: 1px solid $primary-txt;
+			display: inline-block;
+			padding: 10px;
+			background-color: $secondary-bg;
+			margin-bottom: 15px;
+		}
+
+		.news__cards-reactions {
+			display: flex;
+			justify-content: space-between;
+			align-content: center;
+			p {
+				padding: 0;
+			}
+			.seen {
+				display: flex;
+				p {
+					padding-left: 5px;
+				}
+			}
+			.message {
+				display: flex;
+				p {
+					padding-left: 5px;
+				}
+			}
+			.replay {
+				display: flex;
+				p {
+					padding-left: 5px;
+				}
+			}
+		}
+	}
+}
+.footer {
+	background-color: $footer-bg;
+	color: $secondary-bg;
+
+	h5 {
+		padding: 10px 0;
+		font-size: 1.5rem;
+		text-transform: capitalize;
+	}
+	.flex-container {
+		justify-content: space-between;
+		align-content: center;
+		align-items: center;
+		@include sm {
+			flex-direction: column;
+		}
+		@include xs {
+			flex-direction: column;
+		}
+	}
+	.products {
+		width: 30.3333%;
+		@include sm {
+			width: 100%;
+		}
+		@include xs {
+			width: 100%;
+		}
+		li {
+			padding-bottom: 10px;
+		}
+		a {
+			color: $secondary-bg;
+		}
+	}
+	.feed {
+		width: 30.3333%;
+		@include sm {
+			width: 100%;
+		}
+		@include xs {
+			width: 100%;
+		}
+	}
+	.newsletter {
+		width: 30.333%;
+		@include sm {
+			width: 100%;
+		}
+		@include xs {
+			width: 100%;
+		}
+		p {
+			font-size: 1rem;
+			text-transform: lowercase;
+		}
+		.newsletter__form {
+			position: relative;
+		}
+		.newsletter__form-input {
+			// position: relative;
+			width: 100%;
+			padding: 10px 5px;
+			border-radius: 32px;
+			border: none;
+			margin: 20px 0;
+		}
+		.newsletter__form-btn {
+			position: absolute;
+			top: 20px;
+			border-radius: 32px;
+			right: 0;
+			z-index: 2;
+			border: none;
+			height: 37px;
+			// background-color: palevioletred;
+			-webkit-transform: translate(2px);
+			transform: translate(2px);
+			width: 33%;
+			color: $secondary-bg;
+			padding: 4px 0;
+		}
+	}
+	.socials {
+		display: flex;
+		align-items: flex-end;
+		a {
+			background-color: $black;
+			margin: 0 5px;
+			padding: 2px;
+		}
+	}
+}

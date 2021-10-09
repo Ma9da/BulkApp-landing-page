@@ -1,0 +1,337 @@
+body > header .hero-section .section-content, .info-section .content-wrapper .content-txt, .features-section .feature-item {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.888px;
+}
+
+.info-section .content-wrapper .service-name, .appdownload-section .section-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32.36px;
+}
+
+.appdownload-section .section-content {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.888px;
+}
+
+body > header > nav .nav-link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32.36px;
+}
+
+.appdownload-section {
+  background: radial-gradient(center, circle cover, #019cfc 0%, #004692 100%);
+  background-color: #019cfc;
+}
+
+body .btn-download {
+  position: relative;
+  display: inline-block;
+  color: #114685;
+  min-width: 170px;
+  text-align: left;
+  line-height: 1;
+  background-color: #fff;
+  border-radius: 2rem;
+  -webkit-box-shadow: 5px 4.5px 9.5px 0 #bababa;
+  -o-box-shadow: 5px 4.5px 9.5px 0 #bababa;
+  -ms-box-shadow: 5px 4.5px 9.5px 0 #bababa;
+  box-shadow: 5px 4.5px 9.5px 0 #bababa;
+  margin: 0.25rem;
+  padding: 0.3rem 2.5rem;
+}
+
+body .btn-download small {
+  font-size: 0.75rem;
+}
+
+body .btn-download span {
+  font-weight: 500;
+}
+
+body .btn-download .svg-inline--fa {
+  position: absolute;
+  top: calc(50% - 0.75rem);
+  left: 0.75rem;
+  font-size: 1.4rem;
+}
+
+body .btn-download .svg-inline--fa.fa-apple {
+  top: calc(50% - 0.9rem);
+  font-size: 1.6rem;
+}
+
+body .btn-download:hover {
+  cursor: pointer;
+  background-color: #00274b;
+  color: #fff;
+}
+
+.text-primary {
+  color: #114685 !important;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.652px;
+}
+
+body > header {
+  background-image: url("../img/heroBg__.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body > header > nav {
+  background: rgb( 17, 70, 133 );
+  background: rgba(17, 70, 133, 0.47);
+}
+
+body > header > nav .brand-logo {
+  width: 15rem;
+}
+
+body > header > nav .nav-link {
+  font-size: 1.1rem;
+  line-height: 17px;
+  color: #00274b;
+}
+
+body > header > nav .nav-link:hover, body > header > nav .nav-link:focus, body > header > nav .nav-link:active, body > header > nav .nav-link.active {
+  color: #fff;
+}
+
+body > header > nav .nav-link:hover::before, body > header > nav .nav-link:focus::before, body > header > nav .nav-link:active::before, body > header > nav .nav-link.active::before {
+  content: "";
+  background-color: #fbbe17;
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+
+body > header > nav .nav-link.language-switcher {
+  font-family: 'Cairo', sans-serif;
+  background-color: #00274b;
+  border-radius: 0.4rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+body > header > nav .nav-link.language-switcher:hover, body > header > nav .nav-link.language-switcher.active {
+  cursor: pointer;
+  background-color: #fff;
+  color: #00274b;
+}
+
+body > header > nav .nav-link.language-switcher:hover::before, body > header > nav .nav-link.language-switcher.active::before {
+  content: "";
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+
+body > footer {
+  background-color: #114685;
+}
+
+body > footer > section,
+body > footer > .container {
+  background: rgb( 17, 70, 133 );
+  background: rgba(17, 70, 133, 0.47);
+}
+
+.owl-carousel {
+  position: relative;
+}
+
+.owl-carousel::before {
+  content: "";
+  background-image: url("../img/phone_mockup.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: -51px;
+  left: calc(50% - 6.55rem);
+  width: 13.48rem;
+  height: 26rem;
+}
+
+.owl-carousel .owl-item {
+  z-index: 99;
+}
+
+.owl-carousel .owl-item .item {
+  opacity: 0.4;
+  -webkit-transition: .4s ease all;
+  transition: .4s ease all;
+  margin: 0 20px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.owl-carousel .owl-item.active.center .item {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.info-section .content-wrapper {
+  border-radius: 19px;
+  -webkit-box-shadow: 0 1px 14px 0 opacityColor(#114685, 0.47);
+  -o-box-shadow: 0 1px 14px 0 opacityColor(#114685, 0.47);
+  -ms-box-shadow: 0 1px 14px 0 opacityColor(#114685, 0.47);
+  box-shadow: 0 1px 14px 0 opacityColor(#114685, 0.47);
+  margin-top: -60px;
+}
+
+.service-icon {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  min-width: 45px;
+  min-height: 60px;
+}
+
+.service-icon.icon-governmentalPapers {
+  background-image: url("../img/icon_governmentalPapers.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.service-icon.icon-printinAndCopy {
+  background-image: url("../img/icon_printinAndCopy.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.service-icon.icon-storesAndMore {
+  background-image: url("../img/icon_storesAndMore.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.service-icon.icon-writtingAndTranslations {
+  background-image: url("../img/icon_writtingAndTranslations.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.features-section {
+  position: relative;
+}
+
+.features-section:before {
+  content: "";
+  position: absolute;
+  top: -280px;
+  left: -298px;
+  width: 595px;
+  height: 595px;
+  background-image: url("../img/icon_featuresDVD.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.features-section .feature-item {
+  list-style-type: disc;
+}
+
+.screenshots-section {
+  -webkit-box-shadow: 0 1px 14px 0 opacityColor(#000, 0.11);
+  -o-box-shadow: 0 1px 14px 0 opacityColor(#000, 0.11);
+  -ms-box-shadow: 0 1px 14px 0 opacityColor(#000, 0.11);
+  box-shadow: 0 1px 14px 0 opacityColor(#000, 0.11);
+}
+
+.appdownload-section {
+  position: relative;
+  margin-top: -9rem;
+  overflow: hidden;
+}
+
+.appdownload-section::before, .appdownload-section::after {
+  content: "";
+  background-image: url("../img/icon_availableOnArrowBack.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 54rem;
+  width: 45rem;
+  height: 40rem;
+}
+
+.appdownload-section::after {
+  background-image: url("../img/icon_availableOnArrowFront.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  top: 12rem;
+  left: 4rem;
+  width: 12rem;
+  height: 12rem;
+}
+
+.appdownload-section .section-title {
+  font-size: 3rem;
+}
+
+.appdownload-section .section-content {
+  font-size: 2rem;
+}
+
+footer .contactus-section .form-row .btn-default {
+  background-color: #00274b;
+  color: #fff;
+  width: 15%;
+}
+
+footer .contactus-section .form-row .btn-default:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #00274b;
+  -webkit-transition: 500ms ease all;
+  transition: 500ms ease all;
+}
+
+footer .footer-favicon {
+  width: 4rem;
+}
+
+footer .social-nav .social-item .social-link {
+  color: #fff;
+  display: inline-block;
+  background-color: #00274b;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 25px;
+  /* text-align: left; */
+  margin: 0 5px;
+  padding: 4px 12px;
+}
+
+footer .social-nav .social-item .social-link:hover {
+  background-color: #fff;
+  color: #00274b;
+  -webkit-transition: 500ms ease all;
+  transition: 500ms ease all;
+}
+/*# sourceMappingURL=styles.css.map */

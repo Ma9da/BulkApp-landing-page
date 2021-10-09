@@ -1,0 +1,23 @@
+$primary-bg: #f9f9ff;
+$secondary-bg: #ffffff;
+$footer-bg: #222222;
+$primaryHex: #114685;
+$black: rgb(20, 20, 20);
+// bg-urls
+$img-bg-url: "../assets/img/banner/home-banner.jpg";
+
+// colors
+$primary-txt: rgb(34, 34, 34);
+$secandory-txt: rgb(119, 119, 119);
+$gradiant-lightPurpel: #b52eff;
+$gradiant-darkPurpel: #7a46fc;
+$secondary-btn: $gradiant-lightPurpel, $gradiant-darkPurpel;
+$light-borders: #77777726;
+// vendors
+$vendors: "-moz-", "-webkit-", "-o-", "-ms-", "";
+
+//media query variables
+$mobile-xs-width: 320px;
+$mobile-sm-width: 576px; //450px;
+$tablet-xs-width: 768px;
+$tablet-sm-width: 992px;
