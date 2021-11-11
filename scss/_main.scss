@@ -75,7 +75,6 @@ body {
 		@extend %appStoresBtn;
 	}
 }
-
 .navbar {
 	padding: 15px 0;
 	position: absolute;
@@ -85,17 +84,7 @@ body {
 	.flex-container {
 		justify-content: space-between;
 		align-items: center;
-		// @include tablet {
-		// 	flex-direction: column;
-		// }
-		// @include sm {
-		// 	flex-direction: column;
-		// }
-		// @include xs {
-		// 	flex-direction: column;
-		// }
 	}
-
 	.navbar__logo {
 		width: 135px;
 	}
@@ -158,14 +147,12 @@ body {
 			width: 100%;
 		}
 	}
-
 	.header__info p {
 		color: $primary-bg;
 	}
 	.header__info-txt {
 		padding: 23px 0;
 	}
-
 	.header__img {
 		width: 35%;
 		display: flex;
@@ -185,7 +172,6 @@ body {
 	.header__img img {
 		width: 55%;
 	}
-
 	.flex-container {
 		justify-content: space-between;
 		align-items: center;
@@ -253,7 +239,6 @@ body {
 		flex-grow: 1;
 	}
 }
-
 .believe {
 	background-color: $primary-bg;
 	.flex-container {
@@ -303,7 +288,6 @@ body {
 		padding: 30px 0;
 	}
 }
-
 .video {
 	position: relative;
 	.video__icon {
@@ -537,7 +521,6 @@ body {
 			margin-left: 0;
 		}
 	}
-
 	.btn-text {
 		color: $primary-bg;
 		font-size: 25px;
@@ -609,7 +592,6 @@ body {
 			background-color: $secondary-bg;
 			margin-bottom: 15px;
 		}
-
 		.news__cards-reactions {
 			display: flex;
 			justify-content: space-between;
@@ -641,7 +623,6 @@ body {
 .footer {
 	background-color: $footer-bg;
 	color: $secondary-bg;
-
 	h5 {
 		padding: 10px 0;
 		font-size: 1.5rem;
